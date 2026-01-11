@@ -2,13 +2,16 @@
 
 import { useState } from "react"
 import { useTranslations } from "next-intl"
+import { useSession } from "next-auth/react"
 
 export function Generator() {
   const t = useTranslations("nano.generator")
+  const { data: session } = useSession()
   const [prompt, setPrompt] = useState("")
   const [loading, setLoading] = useState(false)
   const [imageUrl, setImageUrl] = useState("")
   const [error, setError] = useState("")
+  const [successMessage, setSuccessMessage] = useState("")
 
   const handleGenerate = async () => {
     if (!prompt.trim()) {
@@ -16,30 +19,52 @@ export function Generator() {
       return
     }
 
+    // 检查是否登录
+    if (!session) {
+      setError("请先登录后再生成图片")
+      return
+    }
+
     setLoading(true)
     setError("")
     setImageUrl("")
+    setSuccessMessage("")
 
     try {
-      // TODO: 实现实际的图片生成 API 调用
-      // 这里暂时使用模拟数据
-      await new Promise(resolve => setTimeout(resolve, 2000))
-      // setImageUrl(response.data.imageUrl)
-    } catch (err) {
-      setError(t("error.failed"))
+      const response = await fetch("/api/image/generate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt }),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || data.message || "生成失败")
+      }
+
+      setImageUrl(data.imageUrl)
+      setSuccessMessage(data.message || `图片生成成功！消耗 ${data.pointsUsed} 积分`)
+    } catch (err: any) {
+      setError(err.message || t("error.failed"))
     } finally {
       setLoading(false)
     }
   }
 
   return (
-    <section className="py-24 bg-card/50">
+    <section id="generator" className="py-24 bg-card/50">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
           AI <span className="text-banana-500">{t("title")}</span>
         </h2>
-        <p className="text-center text-muted-foreground text-lg mb-12">
+        <p className="text-center text-muted-foreground text-lg mb-4">
           {t("subtitle")}
+        </p>
+        <p className="text-center text-banana-500 font-semibold mb-12">
+          每次生成消耗 60 积分
         </p>
 
         <div className="bg-card rounded-3xl p-8 md:p-10 border border-banana-500/20">
@@ -56,7 +81,7 @@ export function Generator() {
               disabled={loading}
               className="w-full mt-4 bg-gradient-to-r from-banana-500 to-orange-500 text-background py-4 rounded-xl font-bold text-lg hover:translate-y-[-2px] transition-transform disabled:opacity-60 disabled:cursor-not-allowed shadow-lg hover:shadow-banana-500/30"
             >
-              {loading ? t("generating") : t("button")}
+              {loading ? t("generating") : `${t("button")} (60积分)`}
             </button>
           </div>
 
@@ -67,7 +92,12 @@ export function Generator() {
                 <p className="text-muted-foreground">{t("loading")}</p>
               </div>
             ) : imageUrl ? (
-              <img src={imageUrl} alt={t("alt")} className="w-full h-full object-contain" />
+              <div className="text-center">
+                <img src={imageUrl} alt={t("alt")} className="w-full max-w-md mx-auto rounded-xl" />
+                {successMessage && (
+                  <p className="text-green-500 mt-4">{successMessage}</p>
+                )}
+              </div>
             ) : (
               <div className="text-center">
                 <span className="text-6xl block mb-4">🎨</span>
@@ -79,6 +109,12 @@ export function Generator() {
           {error && (
             <div className="mt-4 bg-destructive/10 border border-destructive/30 rounded-xl p-4 text-destructive text-center">
               {error}
+            </div>
+          )}
+
+          {session && (
+            <div className="mt-6 text-center text-sm text-muted-foreground">
+              已登录为: {session.user?.name || session.user?.email}
             </div>
           )}
         </div>
