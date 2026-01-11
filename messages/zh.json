@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "title": "Get SaaS - 专为出海设计的现代化SaaS模版",
-    "description": "Get SaaS是专为出海设计的现代化SaaS模版，集成完整的用户认证、支付系统、多语言支持、SEO优化等功能。基于Next.js构建，帮助开发者快速启动SaaS产品。",
+    "title": "Nano Banana - AI图像革命，一句话就能改图",
+    "description": "Nano Banana 是 Google DeepMind 开发的革命性 AI 图像模型，一句话就能完成图片生成、编辑、多图融合等功能。",
     "terms": {
-      "title": "服务条款 - Get SaaS",
-      "description": "查看Get SaaS SaaS模版的使用条款，了解模版使用规则、许可协议和用户权利责任。"
+      "title": "服务条款 - Nano Banana",
+      "description": "查看 Nano Banana 的使用条款，了解使用规则和用户权利责任。"
     },
     "privacy": {
-      "title": "隐私政策 - Get SaaS",
-      "description": "了解Get SaaS如何处理用户数据和隐私保护，确保您的个人信息安全。"
+      "title": "隐私政策 - Nano Banana",
+      "description": "了解 Nano Banana 如何处理用户数据和隐私保护，确保您的个人信息安全。"
     },
     "cookies": {
-      "title": "Cookie政策 - Get SaaS",
-      "description": "了解Get SaaS如何使用Cookie和相关技术来优化用户体验和网站性能。"
+      "title": "Cookie政策 - Nano Banana",
+      "description": "了解 Nano Banana 如何使用Cookie和相关技术来优化用户体验和网站性能。"
     }
   },
   "demoBanner": {
@@ -22,10 +22,10 @@
     "cta": "立即购买完整版"
   },
   "navbar": {
-    "home": "首页",
     "features": "功能特性",
-    "pricing": "定价方案",
-    "blog": "技术博客",
+    "generator": "图片生成器",
+    "faq": "常见问题",
+    "tryNow": "立即体验",
     "signUp": "立即注册",
     "signIn": "登录",
     "profile": "个人中心",
@@ -143,12 +143,13 @@
     }
   },
   "footer": {
-    "description": "专为出海设计的现代化SaaS模版，集成完整的用户认证、支付系统、多语言支持等功能，助您快速启动全球化SaaS产品。",
+    "description": "Nano Banana 是 Google DeepMind 开发的革命性 AI 图像模型，一句话就能完成图片生成、编辑、多图融合等功能。",
     "services": {
       "title": "服务",
       "features": "功能特性",
-      "pricing": "定价方案",
-      "blog": "技术博客"
+      "generator": "图片生成器",
+      "faq": "常见问题",
+      "tryNow": "立即体验"
     },
     "product": {
       "title": "SaaS模版",
@@ -679,6 +680,195 @@
         "excerpt": "深入了解SaaS的定义、商业模式和技术架构，以及如何快速构建现代化SaaS产品。"
       },
       "readMore": "阅读更多"
+    }
+  },
+  "nano": {
+    "hero": {
+      "badge": "AI 图像革命",
+      "title": {
+        "before": "AI 图像革命，一句话就能",
+        "highlight": "改图",
+        "after": "的 AI 黑科技\n彻底改变你的创作方式"
+      },
+      "subtitle": "你有没有想过：如果修图就像和朋友聊天一样简单，世界会变成什么样？",
+      "quote": "把这张照片做成3D玩偶风格，背景换成白色，整体偏可爱",
+      "cta": "探索功能"
+    },
+    "generator": {
+      "title": "图片生成器",
+      "subtitle": "输入描述，AI 为你生成独一无二的图片",
+      "placeholder": "描述你想要的图片，例如：一只可爱的香蕉猫咪，坐在彩虹上，卡通风格...",
+      "button": "生成图片",
+      "generating": "生成中...",
+      "loading": "AI 正在绘制中，请稍候...",
+      "placeholder_text": "你的图片将在这里显示",
+      "alt": "生成的图片",
+      "error": {
+        "empty": "请输入描述文字",
+        "failed": "生成失败，请稍后重试"
+      }
+    },
+    "intro": {
+      "title": {
+        "before": "什么是",
+        "highlight": "Nano Banana"
+      },
+      "product": {
+        "name": "Nano Banana",
+        "description": "是 Google DeepMind 开发的革命性 AI 图像模型，它的正式名称是 Gemini 2.5 Flash Image。",
+        "origin": "这个名字最初只是内部代号，但因为太好记，直接在网络走红，成为了这款现象级 AI 工具的代名词。",
+        "summary": "简单来说：Nano Banana = 把你的话，直接变成图像的 AI 大脑",
+        "note": "它不是一款独立的 App，而是集成在 Google Gemini 中的图像生成与编辑能力。"
+      }
+    },
+    "features": {
+      "title": {
+        "before": "四大",
+        "highlight": "核心功能"
+      },
+      "generation": {
+        "title": "图像生成",
+        "description": "从零开始创建图像。你只需要描述你想要的东西，AI 就能把你的想象变成现实。",
+        "example": "\"一个末日废土风格的指挥官，站在破败城市高处，电影级光影，写实风格\""
+      },
+      "editing": {
+        "title": "图像编辑",
+        "description": "这是 Nano Banana 最火爆的能力，一切只用一句话，无需任何专业技能。",
+        "list": {
+          "background": "换背景：把嘈杂街头换成专业摄影棚",
+          "clothing": "换服装：让人穿上一套未来感战甲",
+          "add": "添加对象：在画面中放入一只可爱猫咪",
+          "remove": "删除杂物：去掉照片里多余的路人"
+        }
+      },
+      "fusion": {
+        "title": "多图融合",
+        "description": "把不同图片的元素巧妙地组合在一起，AI 会自动处理光影、透视，让融合效果自然。",
+        "example": "\"把这张照片里的人，放到那张风景照的前面，风格要统一\""
+      },
+      "consistency": {
+        "title": "角色一致性",
+        "description": "这是很多 AI 工具的痛点，却是 Nano Banana 的强项。多次编辑保持人物高度一致。",
+        "list": {
+          "ip": "打造个人 IP 形象",
+          "avatar": "制作系列头像",
+          "character": "小说人物立绘"
+        }
+      }
+    },
+    "why": {
+      "title": {
+        "before": "为什么",
+        "highlight": "Nano Banana",
+        "after": "如此受欢迎？"
+      },
+      "natural": {
+        "title": "自然语言编辑",
+        "description": "你不需要学 PS，不需要懂专业术语。只要会用中文打字，就能完成复杂修图。"
+      },
+      "consistency": {
+        "title": "角色一致性极强",
+        "description": "很多 AI 工具编辑几次后人脸就变了。Nano Banana 能精准保持人物特征，这是它的核心竞争力。"
+      },
+      "blending": {
+        "title": "场景融合自然",
+        "description": "没有生硬的边缘切割，没有突兀的光影冲突。AI 理解图像的整体语境，让修改浑然天成。"
+      },
+      "speed": {
+        "title": "生成速度快",
+        "description": "几秒钟出图，不满意可以立即调整。这种即时反馈让创作流程变得极其顺畅。"
+      },
+      "styles": {
+        "title": "广泛风格支持",
+        "description": "写实摄影、卡通动漫、油画水彩、3D 渲染……几乎所有视觉风格都能驾驭。"
+      },
+      "fusion": {
+        "title": "多图融合功能",
+        "description": "这是很多简单 AI 工具完全不具备的高级功能，而 Nano Banana 做得游刃有余。"
+      }
+    },
+    "steps": {
+      "title": {
+        "before": "三步上手，",
+        "highlight": "小白也能玩转"
+      },
+      "open": {
+        "title": "打开入口",
+        "description": "访问本网站，用 Google 账号登录",
+        "note": "免费账号即可使用\n但有次数限制"
+      },
+      "upload": {
+        "title": "上传图片或输入描述",
+        "description": "点击输入框旁的附件按钮，上传你想编辑的照片，或者直接用文字描述你想生成的图像"
+      },
+      "edit": {
+        "title": "用自然语言完成编辑",
+        "description": "说出你的需求，几秒钟后，你就得到一张全新的图片",
+        "example": "\"保持人物不变，背景换成星空，加一点梦幻的光效\""
+      }
+    },
+    "scenarios": {
+      "title": {
+        "before": "热门应用",
+        "highlight": "场景"
+      },
+      "social": {
+        "title": "自媒体 / 社交平台",
+        "list": [
+          "真人照片转玩偶风、手办风",
+          "打造统一的个人 IP 形象",
+          "制作吸引眼球的自媒体封面"
+        ]
+      },
+      "creative": {
+        "title": "小说 / 世界观创作",
+        "list": [
+          "人物立绘与角色设定",
+          "场景概念图与氛围图",
+          "阵营、城市、建筑视觉设定"
+        ]
+      },
+      "business": {
+        "title": "电商 / 商务",
+        "list": [
+          "产品图批量换背景",
+          "PPT 配图与概念海报",
+          "营销素材快速生成"
+        ]
+      }
+    },
+    "warning": {
+      "title": "温馨提示：这样使用最安全",
+      "box": {
+        "title": "注意避坑",
+        "description": "网上有很多名为 \"nano banana\" 的第三方网站：",
+        "warning": "这些大多是第三方封装或商业化包装，有的可能要求信用卡、收取费用，甚至存在安全风险。",
+        "note": "使用前请仔细甄别，建议优先选择官方渠道"
+      }
+    },
+    "faq": {
+      "title": {
+        "before": "常见问题",
+        "highlight": "Q&A"
+      },
+      "free": {
+        "question": "Nano Banana 完全免费吗？",
+        "answer": "通过 Google Gemini 使用时，免费账号有次数限制。如果需要大量使用，可能需要付费订阅。"
+      },
+      "commercial": {
+        "question": "生成图片可以商用吗？",
+        "answer": "在官方 Gemini 内使用时，通常允许商用，但建议查看 Google 的最新使用条款。"
+      },
+      "instruction": {
+        "question": "为什么 AI 没按我的指令修改？",
+        "answer": "尝试用更具体的描述：",
+        "bad": "把背景改一下",
+        "good": "把背景换成白色，保持人物位置不变"
+      },
+      "quality": {
+        "question": "输出图片质量不高怎么办？",
+        "answer": "尽量使用高分辨率的原图，并在提示中要求\"高清\"\"4K\"等。"
+      }
     }
   }
 }

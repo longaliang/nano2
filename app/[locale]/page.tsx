@@ -3,16 +3,21 @@
 import { useEffect } from "react"
 
 import { Navbar } from "@/components/navbar"
-import { HeroSection } from "@/components/hero-section"
-import { FeaturesSection } from "@/components/features-section"
-import { PricingSection } from "@/components/pricing-section"
-import { Testimonials } from "@/components/testimonials"
-import { FAQSection } from "@/components/faq-section"
-import { BlogSection } from "@/components/blog-section"
 import { Footer } from "@/components/footer"
 import { PageBackground } from "@/components/page-background"
 
-export default function ChinesePage() {
+// Nano Banana Components
+import { Hero } from "@/components/nano/hero"
+import { Generator } from "@/components/nano/generator"
+import { Intro } from "@/components/nano/intro"
+import { Features } from "@/components/nano/features"
+import { Why } from "@/components/nano/why"
+import { Steps } from "@/components/nano/steps"
+import { Scenarios } from "@/components/nano/scenarios"
+import { Warning } from "@/components/nano/warning"
+import { FAQ } from "@/components/nano/faq"
+
+export default function LocalePage() {
   useEffect(() => {
     // 处理URL中的锚点
     const hash = window.location.hash.replace('#', '')
@@ -29,15 +34,17 @@ export default function ChinesePage() {
 
   return (
     <PageBackground>
-
       <Navbar />
       <main>
-        <HeroSection />
-        <FeaturesSection />
-        <PricingSection />
-        <Testimonials />
-        <FAQSection />
-        <BlogSection />
+        <Hero />
+        <Generator />
+        <Intro />
+        <Features />
+        <Why />
+        <Steps />
+        <Scenarios />
+        <Warning />
+        <FAQ />
       </main>
       <Footer />
     </PageBackground>

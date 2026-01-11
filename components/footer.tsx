@@ -104,13 +104,13 @@ export function Footer() {
                 <div className="relative w-8 h-8">
                   <Image
                     src="/logo.png"
-                    alt="Get SaaS Logo"
+                    alt="Nano Banana Logo"
                     fill
                     className="object-contain"
                   />
                 </div>
                 <span className="text-xl font-bold text-primary">
-                  Get SaaS
+                  Nano Banana
                 </span>
               </Link>
               <p className="text-muted-foreground leading-relaxed max-w-sm">
@@ -135,21 +135,32 @@ export function Footer() {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection("pricing")}
+                    onClick={() => scrollToSection("generator")}
                     className="text-muted-foreground hover:text-primary transition-colors duration-300 flex items-center group"
                   >
                     <span className="w-1 h-1 bg-primary rounded-full mr-3 group-hover:w-2 transition-all duration-300" />
-                    {t("services.pricing")}
+                    {t("services.generator")}
                   </button>
                 </li>
                 <li>
-                  <Link
-                    href={getLocalizedPath("/blog")}
+                  <button
+                    onClick={() => scrollToSection("faq")}
                     className="text-muted-foreground hover:text-primary transition-colors duration-300 flex items-center group"
                   >
                     <span className="w-1 h-1 bg-primary rounded-full mr-3 group-hover:w-2 transition-all duration-300" />
-                    {t("services.blog")}
-                  </Link>
+                    {t("services.faq")}
+                  </button>
+                </li>
+                <li>
+                  <a
+                    href="https://gemini.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300 flex items-center group"
+                  >
+                    <span className="w-1 h-1 bg-primary rounded-full mr-3 group-hover:w-2 transition-all duration-300" />
+                    {t("services.tryNow")}
+                  </a>
                 </li>
               </ul>
             </div>

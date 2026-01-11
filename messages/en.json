@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "title": "Get SaaS - Modern SaaS Template Designed for Global Markets",
-    "description": "Get SaaS is a modern SaaS template designed for global markets, featuring complete user authentication, payment systems, multi-language support, and SEO optimization. Built with Next.js to help developers launch SaaS products quickly.",
+    "title": "Nano Banana - AI Image Revolution, Edit Images with Natural Language",
+    "description": "Nano Banana is a revolutionary AI image model from Google DeepMind that enables image generation, editing, and fusion with just natural language.",
     "terms": {
-      "title": "Terms of Service - Get SaaS",
-      "description": "View Get SaaS's Terms of Service for template usage, understanding usage rules, license agreement and user rights and responsibilities."
+      "title": "Terms of Service - Nano Banana",
+      "description": "View Nano Banana's Terms of Service for usage rules and user rights and responsibilities."
     },
     "privacy": {
-      "title": "Privacy Policy - Get SaaS",
-      "description": "Learn how Get SaaS handles user data and privacy protection to ensure your personal information security."
+      "title": "Privacy Policy - Nano Banana",
+      "description": "Learn how Nano Banana handles user data and privacy protection to ensure your personal information security."
     },
     "cookies": {
-      "title": "Cookie Policy - Get SaaS",
-      "description": "Learn how Get SaaS uses cookies and related technologies to optimize user experience and website performance."
+      "title": "Cookie Policy - Nano Banana",
+      "description": "Learn how Nano Banana uses cookies and related technologies to optimize user experience and website performance."
     }
   },
   "demoBanner": {
@@ -22,10 +22,10 @@
     "cta": "Purchase Full Version"
   },
   "navbar": {
-    "home": "Home",
     "features": "Features",
-    "pricing": "Pricing",
-    "blog": "Tech Blog",
+    "generator": "Generator",
+    "faq": "FAQ",
+    "tryNow": "Try Now",
     "signUp": "Sign Up",
     "signIn": "Sign In",
     "profile": "Profile",
@@ -162,12 +162,13 @@
     }
   },
   "footer": {
-    "description": "Modern SaaS template designed for global markets, featuring complete user authentication, payment systems, multi-language support, helping you quickly launch global SaaS products.",
+    "description": "Nano Banana is a revolutionary AI image model from Google DeepMind that enables image generation, editing, and fusion with just natural language.",
     "services": {
       "title": "Services",
       "features": "Features",
-      "pricing": "Pricing",
-      "blog": "Blog"
+      "generator": "Generator",
+      "faq": "FAQ",
+      "tryNow": "Try Now"
     },
     "product": {
       "title": "SaaS Template",
@@ -699,6 +700,195 @@
         "excerpt": "Understand the definition, business model, and technical architecture of SaaS, and how to rapidly build modern SaaS products."
       },
       "readMore": "Read More"
+    }
+  },
+  "nano": {
+    "hero": {
+      "badge": "AI Image Revolution",
+      "title": {
+        "before": "AI Image Revolution, Edit Images with",
+        "highlight": "Natural Language",
+        "after": "\nThe AI That Transforms Your Creative Process"
+      },
+      "subtitle": "Have you ever wondered: what if editing images was as simple as chatting with a friend?",
+      "quote": "Make this photo into 3D figurine style, change background to white, make it cute overall",
+      "cta": "Explore Features"
+    },
+    "generator": {
+      "title": "AI Image Generator",
+      "subtitle": "Enter a description, and AI will generate a unique image for you",
+      "placeholder": "Describe the image you want, e.g., A cute banana cat sitting on a rainbow, cartoon style...",
+      "button": "Generate Image",
+      "generating": "Generating...",
+      "loading": "AI is creating your image, please wait...",
+      "placeholder_text": "Your image will appear here",
+      "alt": "Generated image",
+      "error": {
+        "empty": "Please enter a description",
+        "failed": "Generation failed, please try again later"
+      }
+    },
+    "intro": {
+      "title": {
+        "before": "What is",
+        "highlight": "Nano Banana"
+      },
+      "product": {
+        "name": "Nano Banana",
+        "description": "is a revolutionary AI image model developed by Google DeepMind, officially known as Gemini 2.5 Flash Image.",
+        "origin": "This name started as an internal code name, but because it's so memorable, it went viral and became the de facto name for this phenomenal AI tool.",
+        "summary": "Simply put: Nano Banana = The AI brain that turns your words directly into images",
+        "note": "It's not a standalone app, but rather the image generation and editing capability integrated into Google Gemini."
+      }
+    },
+    "features": {
+      "title": {
+        "before": "Four Core",
+        "highlight": "Features"
+      },
+      "generation": {
+        "title": "Image Generation",
+        "description": "Create images from scratch. Just describe what you want, and AI will turn your imagination into reality.",
+        "example": "\"A post-apocalyptic commander standing high in a ruined city, cinematic lighting, realistic style\""
+      },
+      "editing": {
+        "title": "Image Editing",
+        "description": "This is Nano Banana's most explosive capability. Everything requires just one sentence, no professional skills needed.",
+        "list": {
+          "background": "Change background: Transform a noisy street into a professional photo studio",
+          "clothing": "Change outfit: Make someone wear futuristic armor",
+          "add": "Add objects: Place a cute cat in the scene",
+          "remove": "Remove clutter: Delete extra people from the photo"
+        }
+      },
+      "fusion": {
+        "title": "Multi-Image Fusion",
+        "description": "Cleverly combine elements from different images. AI automatically handles lighting and perspective for natural blending.",
+        "example": "\"Put the person from this photo in front of that landscape, keep the style consistent\""
+      },
+      "consistency": {
+        "title": "Character Consistency",
+        "description": "This is a pain point for many AI tools, but Nano Banana excels at it. Multiple edits maintain highly consistent characters.",
+        "list": {
+          "ip": "Build personal IP brand",
+          "avatar": "Create avatar series",
+          "character": "Novel character designs"
+        }
+      }
+    },
+    "why": {
+      "title": {
+        "before": "Why is",
+        "highlight": "Nano Banana",
+        "after": "So Popular?"
+      },
+      "natural": {
+        "title": "Natural Language Editing",
+        "description": "You don't need to learn Photoshop or understand technical terms. As long as you can type in Chinese, you can complete complex edits."
+      },
+      "consistency": {
+        "title": "Excellent Character Consistency",
+        "description": "Many AI tools change faces after a few edits. Nano Banana precisely maintains character features - this is its core competitive advantage."
+      },
+      "blending": {
+        "title": "Natural Scene Blending",
+        "description": "No harsh edge cuts, no jarring lighting conflicts. AI understands the overall context of images, making edits seamless."
+      },
+      "speed": {
+        "title": "Fast Generation Speed",
+        "description": "Generate images in seconds, with immediate feedback if not satisfied. This instant feedback makes the creative process incredibly smooth."
+      },
+      "styles": {
+        "title": "Wide Style Support",
+        "description": "Realistic photography, cartoon anime, oil painting, watercolor, 3D rendering... almost any visual style can be handled."
+      },
+      "fusion": {
+        "title": "Multi-Image Fusion Feature",
+        "description": "This is an advanced feature that many simple AI tools completely lack, yet Nano Banana handles it with ease."
+      }
+    },
+    "steps": {
+      "title": {
+        "before": "Three Steps to Get Started,",
+        "highlight": "Beginner Friendly"
+      },
+      "open": {
+        "title": "Open Entry",
+        "description": "Visit this website and sign in with your Google account",
+        "note": "Free account available\nBut with usage limits"
+      },
+      "upload": {
+        "title": "Upload Image or Enter Description",
+        "description": "Click the attachment button next to the input box to upload a photo you want to edit, or simply describe the image you want to generate in words"
+      },
+      "edit": {
+        "title": "Complete Editing with Natural Language",
+        "description": "Tell AI what you want, and in seconds you get a brand new image",
+        "example": "\"Keep the person unchanged, change background to starry sky, add some dreamy lighting effects\""
+      }
+    },
+    "scenarios": {
+      "title": {
+        "before": "Popular Use",
+        "highlight": "Scenarios"
+      },
+      "social": {
+        "title": "Social Media / Content Platforms",
+        "list": [
+          "Transform photos into figurine or figure style",
+          "Build a unified personal IP brand",
+          "Create eye-catching social media covers"
+        ]
+      },
+      "creative": {
+        "title": "Novel / World Building",
+        "list": [
+          "Character designs and settings",
+          "Scene concept art and atmosphere",
+          "Faction, city, and building visual designs"
+        ]
+      },
+      "business": {
+        "title": "E-commerce / Business",
+        "list": [
+          "Batch change product backgrounds",
+          "PPT graphics and concept posters",
+          "Quickly generate marketing materials"
+        ]
+      }
+    },
+    "warning": {
+      "title": "Friendly Reminder: Use Safely",
+      "box": {
+        "title": "Watch Out for Pitfalls",
+        "description": "There are many third-party websites called \"nano banana\" online:",
+        "warning": "These are mostly third-party wrappers or commercial packages. Some may require credit cards, charge fees, or even pose security risks.",
+        "note": "Please carefully verify before use, official channels are recommended"
+      }
+    },
+    "faq": {
+      "title": {
+        "before": "Frequently Asked Questions",
+        "highlight": "Q&A"
+      },
+      "free": {
+        "question": "Is Nano Banana completely free?",
+        "answer": "When using through Google Gemini, free accounts have usage limits. For extensive use, a paid subscription may be required."
+      },
+      "commercial": {
+        "question": "Can generated images be used commercially?",
+        "answer": "When used within the official Gemini, commercial use is generally allowed, but it's recommended to check Google's latest terms of service."
+      },
+      "instruction": {
+        "question": "Why didn't AI follow my instructions?",
+        "answer": "Try using more specific descriptions:",
+        "bad": "Change the background",
+        "good": "Change background to white, keep person in same position"
+      },
+      "quality": {
+        "question": "What if output image quality is low?",
+        "answer": "Use high-resolution original images and request \"HD\" or \"4K\" quality in your prompt."
+      }
     }
   }
 }

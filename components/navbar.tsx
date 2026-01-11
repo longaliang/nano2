@@ -67,14 +67,14 @@ export function Navbar() {
               <div className="relative w-8 h-8 sm:w-10 sm:h-10">
                 <Image
                   src="/logo.png"
-                  alt="Get SaaS Logo"
+                  alt="Nano Banana Logo"
                   fill
                   className="object-contain"
                   priority
                 />
               </div>
               <span className="text-xl sm:text-2xl font-bold text-primary">
-                Get SaaS
+                Nano Banana
               </span>
             </Link>
           </div>
@@ -82,29 +82,31 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection("home")}
-              className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium hover:scale-105 transform"
-            >
-              {t("home")}
-            </button>
-            <button
               onClick={() => scrollToSection("features")}
               className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium hover:scale-105 transform"
             >
               {t("features")}
             </button>
             <button
-              onClick={() => scrollToSection("pricing")}
+              onClick={() => scrollToSection("generator")}
               className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium hover:scale-105 transform"
             >
-              {t("pricing")}
+              {t("generator")}
             </button>
-            <Link
-              href={getLocalizedPath("/blog")}
+            <button
+              onClick={() => scrollToSection("faq")}
               className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium hover:scale-105 transform"
             >
-              {t("blog")}
-            </Link>
+              {t("faq")}
+            </button>
+            <a
+              href="https://gemini.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium hover:scale-105 transform"
+            >
+              {t("tryNow")}
+            </a>
           </div>
 
           {/* Right side controls */}
@@ -183,15 +185,6 @@ export function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-primary/30">
               <button
                 onClick={() => {
-                  scrollToSection("home")
-                  setIsMenuOpen(false)
-                }}
-                className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-primary/20 rounded-lg transition-all duration-300"
-              >
-                {t("home")}
-              </button>
-              <button
-                onClick={() => {
                   scrollToSection("features")
                   setIsMenuOpen(false)
                 }}
@@ -201,20 +194,31 @@ export function Navbar() {
               </button>
               <button
                 onClick={() => {
-                  scrollToSection("pricing")
+                  scrollToSection("generator")
                   setIsMenuOpen(false)
                 }}
                 className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-primary/20 rounded-lg transition-all duration-300"
               >
-                {t("pricing")}
+                {t("generator")}
               </button>
-              <Link
-                href={getLocalizedPath("/blog")}
+              <button
+                onClick={() => {
+                  scrollToSection("faq")
+                  setIsMenuOpen(false)
+                }}
+                className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-primary/20 rounded-lg transition-all duration-300"
+              >
+                {t("faq")}
+              </button>
+              <a
+                href="https://gemini.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
                 className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-primary/20 rounded-lg transition-all duration-300"
               >
-                {t("blog")}
-              </Link>
+                {t("tryNow")}
+              </a>
 
               <div className="border-t border-primary/30 pt-4 space-y-2">
                 {/* Auth Section Mobile */}
